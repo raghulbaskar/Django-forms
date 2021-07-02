@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Show Details</title>
+  </head>
+  <body>
+    <center>
+      <h1>Program Output</h1>
+      <table border="1">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>State</th>
+        </tr>
+
+        <!-- or val.status == 'true' -->
+        {% for val in posts %} {% if val.age == 25 %}
+        <tr>
+          <td>{{val.name}}</td>
+          <td>{{val.age}}</td>
+          <td>{{val.city}}</td>
+          <td>{{val.state}}</td>
+          <td>{{val.check}}</td>
+        </tr>
+        {% endif %} {% endfor %}
+      </table>
+    </center>
+  </body>
+</html>
